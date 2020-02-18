@@ -1,7 +1,7 @@
 # Site
 title:          Jordan Myerowitz's Blog
 bio:            "Budding Data Scientist"
-description:    "Data Scientist"
+description:    "Budding Data Scientist"
 picture:        'assets/img/IMG_8692.jpg'
 locale:         en_US
 url:            https://jmyerowitz.github.io
@@ -57,7 +57,7 @@ linkedin: jordan-myerowitz
 
 
 # Comments
-disqus_shortname: alperenbozkurt-net
+# disqus_shortname: alperenbozkurt-net
 
 
 # Gems
