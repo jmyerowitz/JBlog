@@ -1,8 +1,8 @@
 ---
 layout: page
-title: About the Theme
+title: Behind the Data Scientist
 tags: [about, Jekyll, theme, JBlog]
-date: 2016-03-21
+date: 2020-02-18
 ---
 
 ![jekyll Image](http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/02/1424055625jekyll.png)
@@ -16,7 +16,3 @@ I have used this theme in my own php and ruby blogs. And there are some shortcom
 
 
 If you like this theme or using it, please give a **star** for motivation.
-
-You want to **use it?**      
-
-[Install JBlog](https://github.com/alperenbozkurt/JBlog){: .btn .btn-info}
