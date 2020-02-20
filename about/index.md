@@ -5,14 +5,13 @@ tags: [about, Jekyll, theme, JBlog]
 date: 2020-02-18
 ---
 
-![jekyll Image](http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/02/1424055625jekyll.png)
+![hiking Image](https://github.com/jmyerowitz/jmyerowitz.github.io/blob/master/assets/img/121.JPG)
 {: .image-pull-right}
 
-<center><b>JBlog</b> is a simple jekyll theme.</center>
+<center>Adventure is out there!</center>
 
 ## About
 
-I have used this theme in my own php and ruby blogs. And there are some shortcomings. If something looks extremely ugly and you can't resist to fix it, just send me a PR. I will be grateful.
+Hello! I'm an aspiring Data Scientist that is about to graduate from the <em> University of New Hampshire</em> this coming May. I've set up this site as a well to talk about my ongoing projects--both successes and failures. 
 
-
-If you like this theme or using it, please give a **star** for motivation.
+I'm a pretty adventurous person, whether that be hiking a new mountain or trying out new foods. I hope that it carries over into my future career in learning new techniques and algorithms to analyze data. Feel free to explore the site, and feel free to ping me with any questions or feedback that you have!
