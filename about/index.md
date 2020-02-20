@@ -1,11 +1,10 @@
 ---
 layout: page
 title: Behind the Data Scientist
-tags: [about, Jekyll, theme, JBlog]
 date: 2020-02-18
 ---
 
-![hiking Image](https://github.com/jmyerowitz/jmyerowitz.github.io/blob/master/assets/img/121.JPG){:height="50%" width="50%"}
+![hiking Image](https://github.com/jmyerowitz/jmyerowitz.github.io/blob/master/assets/img/121.JPG){:height="25%" width="25%"}
 
 <center>Adventure is out there!</center>
 
