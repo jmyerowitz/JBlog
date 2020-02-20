@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Behind the Data Scientist
 date: 2020-02-18
 ---
