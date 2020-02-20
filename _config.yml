@@ -1,6 +1,6 @@
 # Site
 title:          Jordan Myerowitz's Blog
-bio:            "M.S. Analytics Candidate"
+bio:            'M.S. Analytics Candidate'
 description:    "Budding Data Scientist"
 picture:        'assets/img/IMG_8692.jpg'
 locale:         en_US
