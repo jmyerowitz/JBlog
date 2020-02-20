@@ -4,7 +4,7 @@ title: Behind the Data Scientist
 date: 2020-02-18
 ---
 
-![Image](https://github.com/jmyerowitz/jmyerowitz.github.io/raw/master/assets/img/image.JPG){:height="50%" width="50%"}
+![Image](https://github.com/jmyerowitz/jmyerowitz.github.io/raw/master/assets/img/image.JPG){:height="80%" width="80%"}
 
 <center>Adventure is out there!</center>
 
