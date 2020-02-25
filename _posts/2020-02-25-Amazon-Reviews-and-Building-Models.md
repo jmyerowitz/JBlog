@@ -3,6 +3,7 @@ layout: post
 title: "Amazon Reviews: Learning from mistakes or: I did all this work and still have an inaccurate model?!?"
 date: 2020-02-25
 ---
+##### Blog post in process, under construction
 
 Near the end of our last semester, one of our professors gave us a case analysis and dataset of Amazon reviews. Our tasks were two-fold: Using basic natural language processing, we were to analyze sentiment and cluster The format of this blog post will be a little different—I will be including excerpts from the report that I wrote, followed by comments/frustrations that I had throughout the assignment. 
 I wanted to share the imperfect process that is machine learning, and how I learned from my mistakes. This was also my first exposure to a “big” dataset—that is, it’s not data that is so big that it must be run on the cloud, but my local machine had quite a few processing issues. 
@@ -27,5 +28,6 @@ Below is a quick description of the problem and an overview of the data:
     constructed from 3000 tokens, but processing power limited the tokens to 1000. 
  
 ![Image1](https://github.com/jmyerowitz/jmyerowitz.github.io/blob/master/assets/img/Capture.PNG)
+
 This is Figure 1, showing the balanced classes that I am trying to predict. 
  
