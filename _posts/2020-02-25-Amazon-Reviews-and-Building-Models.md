@@ -29,5 +29,50 @@ Below is a quick description of the problem and an overview of the data:
  
 ![Image1](https://github.com/jmyerowitz/jmyerowitz.github.io/blob/master/assets/img/Capture.PNG)
 
-This is Figure 1, showing the balanced classes that I am trying to predict. 
+This is Figure 1, showing the balanced classes that I am trying to predict. Also note that I wanted to use 3000 tokens, but ended up with 1000 tokens. I firmly believe that sticking with 3000 would have led to more accurate models. But alas, you live and you learn.
+
+Below is a quick summary of how I was able to cerate Document-Term-Matrices (DTMs)
  
+### Methods
+
+    The basics of natural language processing were employed to create the feature spaces. Preliminary sentiment
+    analysis was conducted via both the TextBlob and Vader python packages in an unsupervised way before being 
+    compared with the actual y-response (Class/Rating). Feature spaces for machine learning were created via 
+    Document-Term Matrices (DTMs) from stemmed tokens of the actual reviews. Tokens were created via the nltk 
+    python package with the use of the word_tokenize function and PorterStemmer function. Each word of a review
+    was lower-cased (if needed) and stemmed to form a token. CountVectorizer (from sklearn package) created 
+    ngrams of length one and extracted the 1000 most frequent tokens.  These 1000 tokens became the features for
+    each review in the 100,000-review sample. If a feature token appeared in a review, it was recorded once. As 
+    such, the first DTM created was a frequency DTM, which can be seen in Figure 2. The second DTM consists of
+    weighting with L2 Regularization, and the third and final DTM weights using L1 Regularization. 
+
+![Image2](https://github.com/jmyerowitz/jmyerowitz.github.io/blob/master/assets/img/Capture1.PNG)
+
+This is a frequency DTM--it counts the amount of times a work (or rather, token) appears in a review. 
+
+You guys want to see some code!?!
+
+    ## Importing nltk dependecies
+        from nltk.tokenize import RegexpTokenizer
+        from nltk.corpus import stopwords
+        from nltk.stem.porter import PorterStemmer
+        from nltk import wordpunct_tokenize
+
+    ## Setting up stop words and Porter Stemmer
+        en_stop = stopwords.words('english')
+
+        en_stop.extend([".","-","(", ")","/", ",", "’", "”","“", "\n", "'", "!"])
+
+        en_stop.extend([";", ".(", ",(", "?", "?)", "),", ")."])
+
+    ## One last stop word extension
+        en_stop.extend(['#', '$', '%', '&', "''", "'d", "'ll", "'m", "'re", "'s", "'the", "'ve", '*', '+', '--', '..', '...', '.i',
+                '.it', '.the', '0', '1', '1.', '1/2', '1/4', '10', '100', '11', '12', '13', '14', '15', '16', '17', '18', 
+                '1980', '1st', '2', '2-3', '2.', '20', '200', '2000', '2003', '2005', '24', '25', '2nd', '3', '3.', '30', 
+                '300', '35', '3d', '3rd', '4', '40', '45', '4th', '5', '50', '500', '6', '60', '7', '70', '8', '80', '9', 
+                '90', ':', '<', '=', '>', '@', '[', ']', '`', '``'])
+
+    # Create p_stemmer of class PorterStemmer
+        p_stemmer = PorterStemmer()
+
+
